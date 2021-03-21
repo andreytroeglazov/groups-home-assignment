@@ -1,0 +1,12 @@
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+  {% for user in users %}
+    {% include 'server-theme-person-card.html.twig' with {
+      name: user.name,
+      image: user.image,
+      position: user.position,
+      role: user.role,
+      call_link: user.call_link,
+      phone_link: user.phone_link,
+    }%}
+  {% endfor %}
+</div>

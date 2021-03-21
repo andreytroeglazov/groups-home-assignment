@@ -240,6 +240,104 @@ class StyleGuideController extends ControllerBase {
       '#url' => '#',
     ];
 
+    $element['server_theme_person_card'] = [
+      '#prefix' => $this->getComponentPrefix('Person Card'),
+      '#theme' => 'server_theme_person_card',
+      '#name' => 'Jane Cooper',
+      '#image' => $this->getPlaceholderPersonImage(256, 256),
+      '#position' => 'Paradigm Representative',
+      '#role' => 'Admin',
+      '#call_link' => '#',
+      '#phone_link' => '#',
+    ];
+
+    $element['server_theme_person_cards'] = [
+      '#prefix' => $this->getComponentPrefix('Person Cards'),
+      '#theme' => 'server_theme_person_cards',
+      '#users' => [
+        [
+          'name' => 'Jennifer Rangel',
+          'image' => $this->getPlaceholderPersonImage(256, 256),
+          'position' => 'CEO',
+          'role' => 'Admin',
+          'call_link' => '#',
+          'phone_link' => '#',
+        ],
+        [
+          'name' => 'Ariella Baird',
+          'image' => $this->getPlaceholderPersonImage(256, 256),
+          'position' => 'CTO',
+          'role' => 'Admin',
+          'call_link' => '#',
+          'phone_link' => '#',
+        ],
+        [
+          'name' => 'Jocelyn Cleveland',
+          'image' => $this->getPlaceholderPersonImage(256, 256),
+          'position' => 'CPO',
+          'role' => '',
+          'call_link' => '#',
+          'phone_link' => '#',
+        ],
+        [
+          'name' => 'Ariella Baird',
+          'image' => $this->getPlaceholderPersonImage(256, 256),
+          'position' => 'QA Specialist',
+          'role' => '',
+          'call_link' => '#',
+          'phone_link' => '#',
+        ],
+        [
+          'name' => 'Alishia Bassett',
+          'image' => $this->getPlaceholderPersonImage(256, 256),
+          'position' => 'Front-end developer',
+          'role' => '',
+          'call_link' => '#',
+          'phone_link' => '#',
+        ],
+        [
+          'name' => 'Austin Chase',
+          'image' => $this->getPlaceholderPersonImage(256, 256),
+          'position' => 'Back-end Developer',
+          'role' => '',
+          'call_link' => '#',
+          'phone_link' => '#',
+        ],
+        [
+          'name' => 'Donald Morin',
+          'image' => $this->getPlaceholderPersonImage(256, 256),
+          'position' => 'Senior Developer',
+          'role' => '',
+          'call_link' => '#',
+          'phone_link' => '#',
+        ],
+        [
+          'name' => 'Abubakar Finnegan',
+          'image' => $this->getPlaceholderPersonImage(256, 256),
+          'position' => 'Project Manager',
+          'role' => '',
+          'call_link' => '#',
+          'phone_link' => '#',
+        ],
+        [
+          'name' => 'Elizabeth Hartman',
+          'image' => $this->getPlaceholderPersonImage(256, 256),
+          'position' => 'Front-end developer',
+          'role' => '',
+          'call_link' => '#',
+          'phone_link' => '#',
+        ],
+        [
+          'name' => 'Sally Johnston',
+          'image' => $this->getPlaceholderPersonImage(256, 256),
+          'position' => 'Content Editor',
+          'role' => '',
+          'call_link' => '#',
+          'phone_link' => '#',
+        ],
+      ]
+    ];
+
     // Add container around each element.
     $build = [];
     foreach ($element as $value) {
