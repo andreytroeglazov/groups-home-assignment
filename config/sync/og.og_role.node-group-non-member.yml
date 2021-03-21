@@ -6,7 +6,7 @@ dependencies:
     - node.type.group
 id: node-group-non-member
 label: Non-member
-weight: null
+weight: 3
 is_admin: null
 group_type: node
 group_bundle: group

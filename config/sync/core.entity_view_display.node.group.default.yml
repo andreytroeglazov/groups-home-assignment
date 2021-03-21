@@ -34,7 +34,7 @@ content:
     settings:
       subscribe_message: 'Subscribe to group'
       unsubscribe_message: 'Unsubscribe from group'
-      request_subscription_message: 'Request group membership'
+      request_subscription_message: 'Hi [current-user:account-name], click here if you would like to subscribe to this group called [current-page:title] '
       closed_group_message: 'This is a closed group. Only a group administrator can add you.'
       manager_message: 'You are the group manager'
     third_party_settings: {  }
