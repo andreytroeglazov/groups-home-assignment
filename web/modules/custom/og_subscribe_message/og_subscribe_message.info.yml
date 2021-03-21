@@ -1,0 +1,5 @@
+name: "Og subscribe message"
+type: module
+description: "Additional logic for og subscription functionality"
+core: 8.x
+package: "og"
