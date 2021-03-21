@@ -1,0 +1,42 @@
+uuid: 94f95709-77d7-4fca-9d2f-e2c3cd483816
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.group.body
+    - node.type.group
+  module:
+    - og_subscribe_message
+    - text
+    - user
+id: node.group.default
+targetEntityType: node
+bundle: group
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  og_group:
+    weight: 0
+    type: og_group_subscribe_extended
+    region: content
+    label: above
+    settings:
+      subscribe_message: 'Subscribe to group'
+      unsubscribe_message: 'Unsubscribe from group'
+      request_subscription_message: 'Request group membership'
+      closed_group_message: 'This is a closed group. Only a group administrator can add you.'
+      manager_message: 'You are the group manager'
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

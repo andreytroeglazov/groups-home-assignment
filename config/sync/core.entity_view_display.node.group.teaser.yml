@@ -1,0 +1,44 @@
+uuid: 62caa1e3-1d53-4b90-b85f-f93dbd18a9fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.group.body
+    - node.type.group
+  module:
+    - og_subscribe_message
+    - text
+    - user
+id: node.group.teaser
+targetEntityType: node
+bundle: group
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  og_group:
+    weight: 0
+    type: og_group_subscribe_extended
+    region: content
+    label: above
+    settings:
+      subscribe_message: 'Subscribe to group'
+      unsubscribe_message: 'Unsubscribe from group'
+      request_subscription_message: 'Hi [current-user:account-name], click here if you would like to subscribe to this group called [node:title] '
+      closed_group_message: 'This is a closed group. Only a group administrator can add you.'
+      manager_message: 'You are the group manager'
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

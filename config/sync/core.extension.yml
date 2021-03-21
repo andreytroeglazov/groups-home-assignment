@@ -25,6 +25,9 @@ module:
   link: 0
   menu_ui: 0
   node: 0
+  og: 0
+  og_subscribe_message: 0
+  og_ui: 0
   options: 0
   page_cache: 0
   path: 0
@@ -41,6 +44,7 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   update: 0
   user: 0
