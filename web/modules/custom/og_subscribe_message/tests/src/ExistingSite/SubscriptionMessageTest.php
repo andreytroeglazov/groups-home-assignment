@@ -31,7 +31,7 @@ class SubscriptionMessageTest extends ExistingSiteBase {
     $this->assertSession()->statusCodeEquals(200);
 
     // Test new group subscription message.
-    $message = "Hi {$registeredUser->getUsername()}, click here if you would to subscribe to this group called {$node->getTitle()}";
+    $message = "Hi {$registeredUser->getUsername()}, click here if you would like to subscribe to this group called {$node->getTitle()}";
     $href = "/group/node/{$node->id()}/subscribe";
     $this->assertSession()->pageTextContainsOnce($message);
     $this->assertSession()->linkExistsExact($message);
